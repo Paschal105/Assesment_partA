@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <header id="top">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li> <a href="./index.html">Biography</a> </li>
+                <li> <a href="./form.html" aria-current="page">Aplication form </a> </li>
+            </ul>
+
+        </nav>
+         
+        <h1>AltSchool Africa Application Portal</h1>
+        <p>
+            Sign up to begin your application or sign in 
+        </p>
+    </header>
+
+    <div>
+        <main>
+            <section aria-label = "accouny_options">
+                
+                <!-- this is for the sign up form-->
+                <details>
+                        <summary>Sign Up</summary>
+                        <p>Create an account to get started on your learning journey</p>
+                    <details>
+                        <summary>Sign up with email</summary>
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Create Your Account</legend>
+                                <p>
+                                    <label for="signup-email">Email address</label>
+                                    <br>
+                                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                                </p>
+                          
+                                <p>
+                                    <label for="first-name">First name</label>
+                                    <br>
+                                    <input type="text" id="first-name" name="firstName" placeholder="Enter First name"required>
+                                </p>
+                           
+                                <p>
+                                    <label for="last-name">Last name</label>
+                                    <br>
+
+                                    <input type="text" id="last-name" name="lastName" placeholder="Enter Last Name"required>
+                                </p>
+                            
+                                <p>
+                                    <label for="phone">Phone number</label>
+                                    <br>
+
+                                    <input type="tel" id="phone"name="phone" placeholder="Enter Phone number"required>
+                                </p>                               
+                         
+                                <p>
+                                    <label for="signup-password">Password</label>
+                                    <br>
+                                    <input type="password" id="signup-password" name="password" placeholder="Enter Password"required minlength="8">
+                                    <br>
+                                    <small id="mini_intruction"> The password must be minimum 8 characters </small>
+                                </p>
+                            </fieldset>
+
+                            <p>
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">
+                                    By clicking Create account, I agree to  <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.
+                                </label>
+                
+                            </p>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </details>
+                </details>
+                <br>
+                <!-- This is for the sign in form-->
+                <details>
+                    <summary>Sign in</summary>
+                    <p>Enter your email address and password to securely log in to AltSchool Student Portal</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <p>
+                                <label for="signin-email">Email address</label>
+                                <br>
+                                <input type="email" id="signin-email" placeholder="Enter your email address" required>
+                            </p>
+                      
+                            <p>
+                                <label for="sigin-password">Password</label>
+                                <br>
+                                <input type="password" id="signin-password" placeholder="Enter password" required>
+                            </p>
+                        </fieldset>
+                        <button type="submit"> Proceed to Dashboard</button>
+                        <p>Forgot your password? <a href="#">Reset Now!</a></p>
+                    </form>
+                </details>
+            </section>        
+        </main>       
+    </div>
+    <br>
+    <a href="#top">Back to the top</a>
+    <div>
+    <br>
+    <footer>
+        <address> Worcester, MA </address>
+        <p> <small>&copy; 2026 Paschal. All rights reserved </small> </p>
+    </footer>
+</div>
+
+</body>
+</html>
